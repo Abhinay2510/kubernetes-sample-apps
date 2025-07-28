@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/<your-username>/kubernetes-sample-apps.git'
+                git branch: 'main', url: 'https://github.com/Abhinay2510/kubernetes-sample-apps.git'
             }
         }
         stage('Build') {
