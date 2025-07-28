@@ -12,9 +12,12 @@ pipeline {
             }
         }
         stage('Deploy') {
-            steps {
-                sh 'echo "Deploying sample app to Kubernetes..."'
-            }
-        }
+    steps {
+        sh '''
+        kubectl apply -f deployment.yaml
+        '''
+    }
+}
+
     }
 }
